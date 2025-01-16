@@ -1,12 +1,35 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     box-sizing: border-box;
-    font-style: roboto;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1;
 }
 
 .header, .footer {
     background-color: #1F2937;
+}
+
+.header {
+    padding: 16px 64px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -26,10 +49,12 @@ body {
     font-size: 18px;
 }
 
+
 ul, a {
     padding: 0;
     margin: 0;
-    
+    display: flex;
+    gap: 16px;
     text-decoration: none;
     list-style: none;
 }
