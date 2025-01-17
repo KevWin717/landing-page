@@ -18,7 +18,8 @@ main {
 }
 
 .header {
-    padding: 16px 64px;
+    padding: 32px 128px 64px;
+    
 }
 
 .header-top {
@@ -29,7 +30,14 @@ main {
 
 .header-bottom {
     display: flex;
+    gap: 18px;
+}
+
+.hero {
+    width: 50%;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;    
 }
 
 .logo {
@@ -43,6 +51,29 @@ main {
     color: #F9FAF8;
 }
 
+.secondary-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hero-image {
+    width: 400px;
+    height: 200px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .secondary-text, a {
     color: #E5E7EB;
